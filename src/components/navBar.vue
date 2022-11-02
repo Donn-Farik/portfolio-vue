@@ -48,6 +48,8 @@ const emit = defineEmits(["handleToggle"]);
 @media screen and (max-width: 992px) {
   .menu-bar {
     display: block;
+    cursor: pointer;
+    width: 300px;
   }
 
   .wrapper {

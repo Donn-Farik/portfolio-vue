@@ -12,27 +12,23 @@
   </div>
 </template>
 
-<script setup>
-// props = defineProps({
-//   imagen: {
-//     type: String,
-//   },
-// });
-</script>
+<script setup></script>
 
 <style scoped>
-.container {
-  background-color: #212121;
-  height: 400px;
-}
-.hero-color {
-  color: #e7e7e7;
-  padding: 30px;
-}
-.hero-name {
-  color: #ffe0b2;
-}
-.hero-text {
-  font-size: 19px;
+@media screen and (max-width: 992px) {
+  .container {
+    background-color: #212121;
+    height: 400px;
+  }
+  .hero-color {
+    color: #e7e7e7;
+    padding: 30px;
+  }
+  .hero-name {
+    color: #ffe0b2;
+  }
+  .hero-text {
+    font-size: 19px;
+  }
 }
 </style>

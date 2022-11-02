@@ -5,7 +5,10 @@ import navBar from "./components/navBar.vue";
 import About from "./components/About.vue";
 import { VueElement } from "@vue/runtime-dom";
 import Hero from "./components/Hero.vue";
-
+import Footer from "./components/Footer.vue";
+import Skils from "./components/Skils.vue";
+import Contact from "./components/Contact.vue";
+import Cards from "./components/Cards.vue";
 const isActivated = ref(true);
 const handleClick = () => {
   isActivated.value = !isActivated.value;
@@ -24,6 +27,42 @@ const handleClick = () => {
     <div class="todo">
       <Hero />
       <About />
+
+      <Skils />
+      <div class="getColor">
+        <h1 class="project">My projects</h1>
+        <Cards
+          image="https://ballesterockmusicdotcom.files.wordpress.com/2016/04/the-doors-logo.jpeg?w=640"
+          title="Chat application"
+          lorem="praesentium consequuntur saepe illo cumque nulla
+      maxime doloribus hic quae. Itaque labore fugit, necessitatibus eaque
+      beatae consequuntur nostrum similique reiciendis sit explicabo sed"
+        />
+        <Cards
+          image="https://ballesterockmusicdotcom.files.wordpress.com/2016/04/the-doors-logo.jpeg?w=640"
+          title="Todo App"
+          lorem="praesentium consequuntur saepe illo cumque nulla
+      maxime doloribus hic quae. Itaque labore fugit, necessitatibus eaque
+      beatae consequuntur nostrum similique reiciendis sit explicabo sed"
+        />
+        <Cards
+          image="https://ballesterockmusicdotcom.files.wordpress.com/2016/04/the-doors-logo.jpeg?w=640"
+          title="spotify landing page"
+          lorem="praesentium consequuntur saepe illo cumque nulla
+      maxime doloribus hic quae. Itaque labore fugit, necessitatibus eaque
+      beatae consequuntur nostrum similique reiciendis sit explicabo sed"
+        />
+        <Cards
+          image="https://ballesterockmusicdotcom.files.wordpress.com/2016/04/the-doors-logo.jpeg?w=640"
+          title="recipe website"
+          lorem="praesentium consequuntur saepe illo cumque nulla
+      maxime doloribus hic quae. Itaque labore fugit, necessitatibus eaque
+      beatae consequuntur nostrum similique reiciendis sit explicabo sed"
+        />
+      </div>
+
+      <Contact />
+      <Footer />
     </div>
   </div>
 
@@ -56,15 +95,16 @@ const handleClick = () => {
     height: 753px;
   }
 
-  .alooo {
-    color: red;
-  }
-
   .navToggle {
     display: none;
   }
-  .todo {
-    position: relative;
+  .getColor {
+    background-color: #2b2b2b;
+  }
+  .project {
+    padding: 20px 0 1px 0;
+    text-align: center;
+    color: #ffe0b2;
   }
 }
 </style>
