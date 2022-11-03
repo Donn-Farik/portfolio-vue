@@ -35,7 +35,7 @@
     <div class="footer">
       <a href="">Linkiding</a>
       <a href="">Tweeter</a>
-      <h3>Created & designed by Fakhreddine Farik</h3>
+      <h3>Build & designed by Fakhreddine Farik 2022</h3>
     </div>
   </div>
 </template>
